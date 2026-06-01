@@ -1,0 +1,327 @@
+.ql-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pf-space-6);
+}
+
+.ql-header__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pf-space-2);
+  margin-top: var(--pf-space-3);
+}
+
+.ql-meta-pill {
+  padding: 4px 12px;
+  border-radius: var(--pf-radius-full);
+  font-size: var(--pf-text-xs);
+  font-weight: 600;
+  background: var(--pf-accent-muted);
+  color: var(--pf-accent);
+  border: 1px solid var(--pf-border);
+}
+
+.ql-meta-pill--success {
+  background: rgba(34, 197, 94, 0.12);
+  color: var(--pf-success);
+}
+
+.ql-overall {
+  padding: var(--pf-space-5);
+}
+
+.ql-overall__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--pf-space-3);
+}
+
+.ql-overall__title {
+  font-size: var(--pf-text-base);
+  font-weight: 600;
+  margin: 0;
+  color: var(--pf-text-primary);
+}
+
+.ql-overall__percent {
+  font-size: var(--pf-text-lg);
+  font-weight: 700;
+  color: var(--pf-accent);
+}
+
+.ql-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--pf-space-4);
+}
+
+.ql-favorites-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ql-filters {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pf-space-4);
+  padding: var(--pf-space-5);
+  background: var(--pf-bg-glass);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--pf-border);
+  border-radius: var(--pf-radius-md);
+  box-shadow: var(--pf-shadow-sm);
+}
+
+.ql-filters__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pf-space-2);
+}
+
+.ql-filters__label {
+  font-size: var(--pf-text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--pf-text-muted);
+  min-width: 72px;
+}
+
+.ql-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--pf-space-4);
+}
+
+.ql-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pf-space-3);
+  padding: var(--pf-space-5);
+  background: var(--pf-bg-glass);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--pf-border);
+  border-radius: var(--pf-radius-md);
+  box-shadow: var(--pf-shadow-sm);
+  transition:
+    transform var(--pf-transition),
+    box-shadow var(--pf-transition),
+    border-color var(--pf-transition);
+}
+
+.ql-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--pf-shadow-glow);
+  border-color: var(--pf-border-strong);
+}
+
+.ql-card--tracked {
+  border-color: var(--pf-accent-glow);
+  background: var(--pf-accent-muted);
+}
+
+.ql-card--solved {
+  border-color: rgba(34, 197, 94, 0.35);
+}
+
+.ql-card__title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--pf-space-2);
+  flex: 1;
+  min-width: 0;
+}
+
+.ql-bookmark {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border: none;
+  background: transparent;
+  color: var(--pf-text-muted);
+  cursor: pointer;
+  border-radius: var(--pf-radius-sm);
+  transition:
+    color var(--pf-transition),
+    transform var(--pf-transition);
+}
+
+.ql-bookmark:hover {
+  color: var(--pf-warning, #eab308);
+  transform: scale(1.08);
+}
+
+.ql-bookmark--active {
+  color: var(--pf-warning, #eab308);
+}
+
+.ql-card__badges {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.ql-solved-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  border-radius: var(--pf-radius-full);
+  font-size: 11px;
+  font-weight: 600;
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--pf-success);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.ql-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--pf-space-3);
+}
+
+.ql-card__title {
+  font-size: var(--pf-text-base);
+  font-weight: 600;
+  color: var(--pf-text-primary);
+  line-height: 1.35;
+}
+
+.ql-card__topic {
+  font-size: var(--pf-text-xs);
+  color: var(--pf-text-muted);
+  margin-top: 4px;
+}
+
+.ql-card__companies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ql-company-tag {
+  padding: 3px 8px;
+  border-radius: var(--pf-radius-sm);
+  font-size: 11px;
+  font-weight: 500;
+  background: var(--pf-bg-subtle);
+  border: 1px solid var(--pf-border);
+  color: var(--pf-text-secondary);
+}
+
+.ql-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pf-space-2);
+  margin-top: auto;
+  padding-top: var(--pf-space-3);
+  border-top: 1px solid var(--pf-border);
+}
+
+.ql-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--pf-text-sm);
+  font-weight: 500;
+  color: var(--pf-accent);
+  text-decoration: none;
+  transition: opacity var(--pf-transition);
+}
+
+.ql-link:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.ql-add-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  padding: 8px 14px;
+  border: none;
+  border-radius: var(--pf-radius-sm);
+  background: var(--pf-gradient-brand);
+  color: #fff;
+  font-size: var(--pf-text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--pf-shadow-sm);
+  transition:
+    transform var(--pf-transition),
+    opacity var(--pf-transition);
+}
+
+.ql-add-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.ql-add-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  background: var(--pf-bg-subtle);
+  color: var(--pf-text-muted);
+  box-shadow: none;
+}
+
+.ql-toast {
+  position: fixed;
+  bottom: var(--pf-space-6);
+  right: var(--pf-space-6);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  gap: var(--pf-space-3);
+  padding: var(--pf-space-4) var(--pf-space-5);
+  border-radius: var(--pf-radius-md);
+  font-size: var(--pf-text-sm);
+  font-weight: 500;
+  box-shadow: var(--pf-shadow-lg);
+  backdrop-filter: blur(16px);
+  animation: ql-toast-in 0.3s ease;
+}
+
+.ql-toast--success {
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: var(--pf-success);
+}
+
+.ql-toast--info {
+  background: var(--pf-bg-glass-strong);
+  border: 1px solid var(--pf-border);
+  color: var(--pf-text-primary);
+}
+
+@keyframes ql-toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .ql-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ql-toast {
+    left: var(--pf-space-4);
+    right: var(--pf-space-4);
+  }
+}

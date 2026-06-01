@@ -1,0 +1,153 @@
+/* PrepFlow X — Design tokens */
+
+:root,
+[data-theme='light'] {
+  --pf-bg-base: #f8f9fc;
+  --pf-bg-elevated: #ffffff;
+  --pf-bg-glass: rgba(255, 255, 255, 0.72);
+  --pf-bg-glass-strong: rgba(255, 255, 255, 0.88);
+  --pf-bg-subtle: #f1f3f9;
+  --pf-bg-hover: rgba(99, 102, 241, 0.06);
+
+  --pf-text-primary: #0f172a;
+  --pf-text-secondary: #64748b;
+  --pf-text-muted: #94a3b8;
+
+  --pf-border: rgba(15, 23, 42, 0.08);
+  --pf-border-strong: rgba(15, 23, 42, 0.12);
+
+  --pf-accent: #6366f1;
+  --pf-accent-hover: #4f46e5;
+  --pf-accent-muted: rgba(99, 102, 241, 0.12);
+  --pf-accent-glow: rgba(99, 102, 241, 0.35);
+
+  --pf-gradient-hero: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.12) 0%,
+    rgba(168, 85, 247, 0.08) 50%,
+    rgba(56, 189, 248, 0.06) 100%
+  );
+  --pf-gradient-brand: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --pf-gradient-mesh:
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(168, 85, 247, 0.1) 0, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(56, 189, 248, 0.08) 0, transparent 50%);
+  --pf-gradient-ambient: linear-gradient(
+    180deg,
+    rgba(99, 102, 241, 0.04) 0%,
+    transparent 40%
+  );
+  --pf-ring-track: rgba(15, 23, 42, 0.1);
+  --pf-sidebar-bg: rgba(255, 255, 255, 0.92);
+
+  --pf-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --pf-shadow-md: 0 4px 16px rgba(15, 23, 42, 0.06);
+  --pf-shadow-lg: 0 12px 40px rgba(15, 23, 42, 0.1);
+  --pf-shadow-glow: 0 0 0 1px rgba(99, 102, 241, 0.1), 0 8px 24px rgba(99, 102, 241, 0.15);
+
+  --pf-success: #16a34a;
+  --pf-warning: #ca8a04;
+  --pf-danger: #dc2626;
+  --pf-info: #2563eb;
+}
+
+[data-theme='dark'] {
+  --pf-bg-base: #09090b;
+  --pf-bg-elevated: #121214;
+  --pf-bg-glass: rgba(18, 18, 20, 0.75);
+  --pf-bg-glass-strong: rgba(24, 24, 27, 0.92);
+  --pf-bg-subtle: #18181b;
+  --pf-bg-hover: rgba(129, 140, 248, 0.1);
+
+  --pf-text-primary: #fafafa;
+  --pf-text-secondary: #a1a1aa;
+  --pf-text-muted: #71717a;
+
+  --pf-border: rgba(255, 255, 255, 0.08);
+  --pf-border-strong: rgba(255, 255, 255, 0.12);
+
+  --pf-accent: #818cf8;
+  --pf-accent-hover: #a5b4fc;
+  --pf-accent-muted: rgba(129, 140, 248, 0.15);
+  --pf-accent-glow: rgba(129, 140, 248, 0.4);
+
+  --pf-gradient-hero: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.2) 0%,
+    rgba(168, 85, 247, 0.12) 50%,
+    rgba(56, 189, 248, 0.08) 100%
+  );
+  --pf-gradient-brand: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+  --pf-gradient-mesh:
+    radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.2) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(168, 85, 247, 0.15) 0, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(56, 189, 248, 0.1) 0, transparent 50%);
+  --pf-gradient-ambient: linear-gradient(
+    180deg,
+    rgba(99, 102, 241, 0.08) 0%,
+    transparent 45%
+  );
+  --pf-ring-track: rgba(255, 255, 255, 0.08);
+  --pf-sidebar-bg: rgba(12, 12, 14, 0.95);
+
+  --pf-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --pf-shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --pf-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.5);
+  --pf-shadow-glow: 0 0 0 1px rgba(129, 140, 248, 0.2), 0 8px 32px rgba(99, 102, 241, 0.25);
+
+  --pf-success: #4ade80;
+  --pf-warning: #facc15;
+  --pf-danger: #f87171;
+  --pf-info: #60a5fa;
+}
+
+:root {
+  /* Spacing scale */
+  --pf-space-1: 4px;
+  --pf-space-2: 8px;
+  --pf-space-3: 12px;
+  --pf-space-4: 16px;
+  --pf-space-5: 20px;
+  --pf-space-6: 24px;
+  --pf-space-8: 32px;
+  --pf-space-10: 40px;
+  --pf-space-12: 48px;
+
+  /* Radius */
+  --pf-radius-sm: 10px;
+  --pf-radius-md: 16px;
+  --pf-radius-lg: 20px;
+  --pf-radius-xl: 24px;
+  --pf-radius-full: 999px;
+
+  /* Typography */
+  --pf-font: 'Inter', system-ui, -apple-system, sans-serif;
+  --pf-font-mono: ui-monospace, 'SF Mono', Consolas, monospace;
+
+  --pf-text-xs: 0.75rem;
+  --pf-text-sm: 0.875rem;
+  --pf-text-base: 1rem;
+  --pf-text-lg: 1.125rem;
+  --pf-text-xl: 1.25rem;
+  --pf-text-2xl: 1.5rem;
+  --pf-text-3xl: 2rem;
+
+  --pf-sidebar-width: 260px;
+  --pf-sidebar-collapsed: 76px;
+  --pf-transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Legacy aliases (existing components) */
+  --text: var(--pf-text-secondary);
+  --text-h: var(--pf-text-primary);
+  --bg: var(--pf-bg-elevated);
+  --border: var(--pf-border);
+  --code-bg: var(--pf-bg-subtle);
+  --accent: var(--pf-accent);
+  --accent-bg: var(--pf-accent-muted);
+  --accent-border: var(--pf-accent-glow);
+  --social-bg: var(--pf-bg-hover);
+  --shadow: var(--pf-shadow-md);
+  --sans: var(--pf-font);
+  --heading: var(--pf-font);
+  --mono: var(--pf-font-mono);
+}
