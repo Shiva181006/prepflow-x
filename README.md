@@ -1,260 +1,307 @@
-# PrepFlow X
+# 🚀 PrepFlow X
 
-A modern, single-page placement preparation workspace for tracking DSA problems, SQL practice, interview applications, and a curated question library—with analytics, progress insights, and persistent local storage.
+### Smart Interview Preparation & Placement Tracking Platform
 
-![PrepFlow X](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white)
+A modern React-based platform for students and developers to manage their complete placement preparation journey — including DSA tracking, SQL practice, interview applications, question library, analytics, and progress insights.
+
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
 ---
 
-## Project Overview
+## 🚀 Live Demo
 
-**PrepFlow X** helps students and job seekers organize placement prep in one place. Instead of juggling spreadsheets and bookmarks, you get a unified dashboard, dedicated trackers, a 50-question interview library, and visual analytics—all running in the browser with data saved to `localStorage` (no backend required).
+🔗 Live Application: Coming Soon
 
-The app uses a glassmorphism-inspired UI, light/dark themes, animated page transitions, and responsive layouts suitable for daily study workflows.
-
----
-
-## Features
-
-### Dashboard
-- At-a-glance stats for DSA, SQL, and placement pipeline
-- **Interview Readiness** score based on tracker completion
-- Progress rings for DSA, SQL, Question Library, and overall prep
-- Question Library summary with top company progress
-- Applications-by-stage breakdown and recent activity timeline
-- Sidebar widgets: study streak and prep progress
-
-### Question Library
-- Browse **50** curated LeetCode-style problems (topic, difficulty, company tags)
-- Search and filter by difficulty, topic, company, or bookmarks
-- One-click **Add to DSA Tracker** with duplicate detection
-- Bookmarks/favorites, solved indicators (synced when tracker status is **Done**)
-- Overall, company-wise, topic-wise, and difficulty-wise progress bars
-
-### DSA Tracker
-- Add, edit, delete problems with title, difficulty, topic, platform, link, and status
-- Status workflow: `Todo` → `In Progress` → `Done`
-- Search and filter chips
-
-### SQL Tracker
-- Same CRUD and filtering model as the DSA tracker for SQL practice items
-
-### Placement Tracker
-- Kanban board for application stages: Applied, Online Assessment, Interview, Offer, Rejected
-- Drag-and-drop stage updates
-
-### Analytics
-- Pie charts for DSA difficulty/status, SQL status, and placement stages
-- Bar charts for DSA/SQL completion breakdown
-- Question Library charts: topic, company, and difficulty progress
-
-### Settings
-- Light / dark theme toggle
-- Export and import all app data as JSON
-- Clear data with confirmation modal
+📂 GitHub Repository:  
+https://github.com/Shiva181006/prepflow-x
 
 ---
 
-## Screenshots
+## 📌 Project Overview
 
-> Replace the placeholders below with real screenshots after capturing your app (recommended: 1280×720 or 1440×900 PNG).
+**PrepFlow X** is a complete interview preparation dashboard designed to solve the problem of scattered preparation resources.
 
-| Dashboard | Question Library |
-| :---: | :---: |
-| ![Dashboard](docs/screenshots/dashboard.png) | ![Question Library](docs/screenshots/question-library.png) |
-| *Overview, readiness score, progress rings* | *Filters, bookmarks, company progress* |
+Students usually manage:
 
-| DSA Tracker | Analytics |
-| :---: | :---: |
-| ![DSA Tracker](docs/screenshots/dsa-tracker.png) | ![Analytics](docs/screenshots/analytics.png) |
-| *Problem table and filters* | *Charts and library insights* |
+- DSA sheets
+- SQL practice
+- Company applications
+- Interview preparation progress
+- Notes and analytics
 
-| Placement Kanban | Settings |
-| :---: | :---: |
-| ![Placement](docs/screenshots/placement.png) | ![Settings](docs/screenshots/settings.png) |
-| *Stage-based pipeline* | *Theme and data backup* |
+using different tools.
 
-**Quick setup for screenshots**
+PrepFlow X combines everything into one clean and interactive platform.
 
-```bash
-mkdir -p docs/screenshots
-# Add your PNG files using the filenames above, then commit them.
+The application works completely in the browser using LocalStorage, meaning no backend setup is required.
+
+---
+
+# ✨ Project Highlights
+
+- 📚 50+ curated DSA interview questions
+- 🔥 One-click Add To Tracker
+- 📊 Real-time analytics dashboard
+- 🧠 Interview readiness tracking
+- 💻 DSA preparation tracker
+- 🗄️ SQL practice tracker
+- 💼 Placement application Kanban board
+- 📈 Company/topic progress analytics
+- 🔖 Bookmark important questions
+- 🌙 Dark / Light theme
+- 💾 Persistent LocalStorage
+- 📤 Import / Export data backup
+- 📱 Fully responsive design
+
+---
+
+# 🚀 Features
+
+## 📊 Dashboard
+
+- Preparation overview
+- Interview readiness score
+- Progress visualization
+- Recent activity timeline
+- Study streak tracking
+
+---
+
+## 📚 Question Library
+
+- 50 curated interview questions
+- Difficulty filtering
+- Topic filtering
+- Company-based filtering
+- Bookmark questions
+- Add questions directly into tracker
+- Duplicate prevention
+- Solved status synchronization
+
+---
+
+## 💻 DSA Tracker
+
+Manage coding preparation:
+
+- Add problems
+- Track difficulty
+- Track topic
+- Maintain status
+
+Status workflow:
+
+```
+Todo → In Progress → Done
 ```
 
 ---
 
-## Tech Stack
+## 🗄️ SQL Tracker
 
-| Category | Technologies |
-| -------- | ------------ |
-| **Framework** | React 19 |
-| **Build tool** | Vite 8 |
-| **Routing** | React Router DOM 7 |
-| **Charts** | Recharts 3 |
-| **Animation** | Framer Motion 12 |
-| **Icons** | Lucide React |
-| **Styling** | CSS (design tokens, glass surfaces, modular stylesheets) |
-| **State & persistence** | React Context API + `localStorage` |
-| **Utilities** | date-fns |
+Track SQL preparation:
+
+- SQL questions
+- Categories
+- Difficulty
+- Completion status
 
 ---
 
-## Folder Structure
+## 💼 Placement Tracker
+
+Manage job applications using Kanban workflow.
+
+Stages:
+
+```
+Applied
+Online Assessment
+Interview
+Offer
+Rejected
+```
+
+Features:
+
+- Add applications
+- Update stages
+- Drag & drop workflow
+
+---
+
+## 📈 Analytics
+
+Visual insights using Recharts:
+
+- DSA difficulty analysis
+- SQL progress
+- Placement statistics
+- Topic coverage
+- Company progress
+
+---
+
+## ⚙️ Settings
+
+Includes:
+
+- Theme switching
+- Export data
+- Import backup
+- Clear data safely
+
+---
+
+# 🛠️ Tech Stack
+
+| Technology | Usage |
+|----------|-------|
+| React | Frontend |
+| Vite | Build Tool |
+| React Router | Routing |
+| Context API | State Management |
+| Recharts | Charts |
+| Framer Motion | Animations |
+| Lucide React | Icons |
+| CSS | Responsive UI |
+| LocalStorage | Data Persistence |
+
+---
+
+# 📁 Folder Structure
 
 ```text
-project/
-├── public/                 # Static assets (favicon, etc.)
-├── docs/
-│   └── screenshots/        # README screenshot images (optional)
-├── src/
-│   ├── assets/             # SVG and static media
-│   ├── components/         # Shared UI (ProgressRing, ProgressBar, modals, …)
-│   ├── constants/          # Routes, tracker enums, chart colors
-│   ├── context/            # Theme, DSA, SQL, Placement, Library providers
-│   ├── data/               # Curated question library dataset
-│   ├── hooks/              # Custom hooks (e.g. useLibraryProgress)
-│   ├── layouts/            # MainLayout, Sidebar, TopBar
-│   ├── pages/              # Route-level views
-│   ├── routes/             # AppRouter configuration
-│   ├── styles/             # Global tokens, base, components, page CSS
-│   └── utils/              # Storage, sanitize, library progress helpers
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
+src/
+│
+├── components/
+│   └── Reusable UI components
+│
+├── context/
+│   ├── DSAContext
+│   ├── SQLContext
+│   ├── PlacementContext
+│   └── ThemeContext
+│
+├── data/
+│   └── Question Library
+│
+├── hooks/
+│   └── Custom hooks
+│
+├── layouts/
+│   └── Sidebar / Layout
+│
+├── pages/
+│   ├── Dashboard
+│   ├── DSA Tracker
+│   ├── SQL Tracker
+│   ├── Analytics
+│   └── Settings
+│
+└── utils/
+    └── Helper functions
 ```
 
 ---
 
-## Installation Steps
+# ⚡ Installation
 
-### Prerequisites
-
-- **Node.js** 18.x or newer (20 LTS recommended)
-- **npm** 9+ (or pnpm / yarn)
-
-### 1. Clone the repository
+Clone repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/prepflow-x.git
+git clone https://github.com/Shiva181006/prepflow-x.git
+```
+
+Go inside project:
+
+```bash
 cd prepflow-x
 ```
 
-### 2. Install dependencies
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-### 3. Start the development server
+Start development server:
 
 ```bash
 npm run dev
 ```
 
-Open the URL shown in the terminal (typically `http://localhost:5173`).
-
-### 4. Other scripts
-
-| Command | Description |
-| ------- | ----------- |
-| `npm run build` | Production build to `dist/` |
-| `npm run preview` | Serve the production build locally |
-| `npm run lint` | Run ESLint |
-
----
-
-## Deployment Instructions
-
-PrepFlow X is a **static SPA**. Build once and deploy the `dist` folder to any static host.
-
-### Build
+Build project:
 
 ```bash
 npm run build
 ```
 
-Output directory: **`dist/`**
+---
 
-### Vercel
+# 🌍 Deployment
 
-1. Import the GitHub repository on [vercel.com](https://vercel.com).
-2. Framework preset: **Vite**
-3. Build command: `npm run build`
-4. Output directory: `dist`
-5. Deploy.
+The project can be deployed on:
 
-### Netlify
+- Vercel
+- Netlify
+- GitHub Pages
 
-1. Connect the repo at [netlify.com](https://www.netlify.com).
-2. Build command: `npm run build`
-3. Publish directory: `dist`
-4. Deploy.
+Recommended:
 
-### GitHub Pages
-
-1. Install the helper (one-time): `npm install -D gh-pages`
-2. Set `base` in `vite.config.js` to your repo name, e.g. `base: '/prepflow-x/'`.
-3. Add to `package.json`:
-
-```json
-"scripts": {
-  "deploy": "npm run build && gh-pages -d dist"
-}
+```text
+Vercel + GitHub Integration
 ```
 
-4. Run `npm run deploy` and enable Pages from the `gh-pages` branch in repository settings.
+---
 
-### Environment notes
+# 🧠 What I Learned
 
-- No API keys or server environment variables are required.
-- Data lives in the user’s browser (`localStorage`). Clearing site data resets the app.
+Through this project:
+
+- React component architecture
+- Context API state management
+- Routing
+- Data persistence
+- Performance optimization
+- Reusable components
+- Dashboard design
+- Real-world project structure
 
 ---
 
-## Future Enhancements
+# 🔮 Future Improvements
 
-- [ ] Cloud sync and authentication (Firebase / Supabase)
-- [ ] Spaced-repetition reminders and calendar integration
-- [ ] Custom question lists and import from CSV
-- [ ] Mock interview timer and session notes
-- [ ] PWA offline support and install prompt
-- [ ] Unit and E2E tests (Vitest, Playwright)
-- [ ] Code-splitting for smaller initial bundle (Recharts lazy load)
-- [ ] Multi-profile / workspace support
-
----
-
-## Resume Description
-
-Use or adapt the following on your resume, LinkedIn, or portfolio:
-
-**PrepFlow X — Placement Preparation Dashboard**  
-*React · Vite · React Router · Recharts · Framer Motion*
-
-- Built a full-stack-style placement prep SPA with DSA/SQL trackers, a 50-question interview library (bookmarks, solved sync, company/topic analytics), and a drag-and-drop placement Kanban—persisted via Context API and `localStorage`.
-- Designed a responsive glassmorphism UI with light/dark themes, animated routing, dashboard readiness metrics, Recharts analytics, and JSON export/import for portable user data.
-- Implemented duplicate-safe library-to-tracker flows, progress aggregation across company/topic/difficulty dimensions, and a production-ready Vite build deployable to static hosting.
+- Backend integration
+- User authentication
+- Cloud database
+- AI-based preparation suggestions
+- Mock interview system
+- Calendar reminders
+- PWA support
 
 ---
 
-## License
+# 💼 Resume Description
 
-This project is open source under the **MIT License**. See [LICENSE](LICENSE) if included in the repository; otherwise, add a `LICENSE` file before publishing.
+**PrepFlow X — Interview Preparation Platform**
 
----
-
-## Author
-
-**Your Name**  
-[GitHub](https://github.com/YOUR_USERNAME) · [LinkedIn](https://linkedin.com/in/YOUR_PROFILE) · [Portfolio](https://your-portfolio.com)
+Built a modern React-based placement preparation platform featuring DSA tracking, SQL practice management, placement workflow tracking, analytics dashboard, curated question library, bookmarks, dark/light theme, and persistent data storage using Context API and LocalStorage.
 
 ---
 
-<p align="center">
-  <sub>Built with PrepFlow X — track smarter, interview stronger.</sub>
-</p>
-#   p r e p f l o w - x  
- 
+# 👨‍💻 Author
+
+**Shiva Kasaudhan**
+
+GitHub:  
+https://github.com/Shiva181006
+
+LinkedIn:  
+Add your LinkedIn URL
+
+---
+
+⭐ If you like this project, consider giving it a star!
