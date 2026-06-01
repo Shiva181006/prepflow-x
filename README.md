@@ -1,221 +1,152 @@
-# 🚀 PrepFlow X
+# PrepFlow X
 
-### Smart Interview Preparation & Placement Tracking Platform
+> A placement preparation dashboard built with React to organize coding practice, SQL preparation, job applications, and progress tracking in one workspace.
 
-A modern React-based platform for students and developers to manage their complete placement preparation journey — including DSA tracking, SQL practice, interview applications, question library, analytics, and progress insights.
-
-![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
-
----
-
-## 🚀 Live Demo
-
-🔗 Live Application: Coming Soon
-
-📂 GitHub Repository:  
-https://github.com/Shiva181006/prepflow-x
+![React](https://img.shields.io/badge/React-19-blue)
+![Vite](https://img.shields.io/badge/Vite-8-purple)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
 ---
 
-## 📌 Project Overview
+## About The Project
 
-**PrepFlow X** is a complete interview preparation dashboard designed to solve the problem of scattered preparation resources.
+PrepFlow X is a frontend application designed to help students manage their placement preparation workflow.
 
-Students usually manage:
+During interview preparation, students often maintain separate spreadsheets, notes, coding sheets, and application trackers. This project brings those activities into a single dashboard with progress tracking and analytics.
 
-- DSA sheets
-- SQL practice
-- Company applications
-- Interview preparation progress
-- Notes and analytics
-
-using different tools.
-
-PrepFlow X combines everything into one clean and interactive platform.
-
-The application works completely in the browser using LocalStorage, meaning no backend setup is required.
+The focus of this project is building a structured React application with reusable components, centralized state management, and a clean user experience.
 
 ---
 
-# ✨ Project Highlights
+## Key Features
 
-- 📚 50+ curated DSA interview questions
-- 🔥 One-click Add To Tracker
-- 📊 Real-time analytics dashboard
-- 🧠 Interview readiness tracking
-- 💻 DSA preparation tracker
-- 🗄️ SQL practice tracker
-- 💼 Placement application Kanban board
-- 📈 Company/topic progress analytics
-- 🔖 Bookmark important questions
-- 🌙 Dark / Light theme
-- 💾 Persistent LocalStorage
-- 📤 Import / Export data backup
-- 📱 Fully responsive design
+### Dashboard
 
----
-
-# 🚀 Features
-
-## 📊 Dashboard
-
-- Preparation overview
-- Interview readiness score
+- Overview of complete preparation progress
+- Interview readiness insights
+- Recent activity tracking
 - Progress visualization
-- Recent activity timeline
-- Study streak tracking
 
----
+### Question Library
 
-## 📚 Question Library
+- Curated DSA question collection
+- Search and filtering support
+- Topic and company based organization
+- Bookmark important problems
+- Add problems directly into personal tracker
 
-- 50 curated interview questions
-- Difficulty filtering
-- Topic filtering
-- Company-based filtering
-- Bookmark questions
-- Add questions directly into tracker
-- Duplicate prevention
-- Solved status synchronization
+### DSA Tracker
 
----
+- Manage coding problems
+- Track difficulty and topics
+- Update completion status
+- Monitor solving progress
 
-## 💻 DSA Tracker
+### SQL Tracker
 
-Manage coding preparation:
+- Maintain SQL practice questions
+- Track learning progress
+- Organize by topics and difficulty
 
-- Add problems
-- Track difficulty
-- Track topic
-- Maintain status
+### Placement Tracker
 
-Status workflow:
+- Kanban based application management
+- Track interview stages
 
-```
-Todo → In Progress → Done
-```
-
----
-
-## 🗄️ SQL Tracker
-
-Track SQL preparation:
-
-- SQL questions
-- Categories
-- Difficulty
-- Completion status
-
----
-
-## 💼 Placement Tracker
-
-Manage job applications using Kanban workflow.
-
-Stages:
+Application flow:
 
 ```
-Applied
-Online Assessment
-Interview
-Offer
-Rejected
+Applied → Online Assessment → Interview → Offer → Rejected
 ```
 
-Features:
+### Analytics Dashboard
 
-- Add applications
-- Update stages
-- Drag & drop workflow
+- Preparation progress charts
+- Topic-wise analysis
+- Difficulty distribution
+- Placement insights
 
----
+### User Preferences
 
-## 📈 Analytics
-
-Visual insights using Recharts:
-
-- DSA difficulty analysis
-- SQL progress
-- Placement statistics
-- Topic coverage
-- Company progress
+- Dark / Light theme
+- Data import and export
+- Persistent browser storage
 
 ---
 
-## ⚙️ Settings
+## Tech Stack
 
-Includes:
-
-- Theme switching
-- Export data
-- Import backup
-- Clear data safely
-
----
-
-# 🛠️ Tech Stack
-
-| Technology | Usage |
-|----------|-------|
-| React | Frontend |
+| Technology | Purpose |
+|-----------|---------|
+| React | UI Development |
 | Vite | Build Tool |
 | React Router | Routing |
-| Context API | State Management |
-| Recharts | Charts |
+| Context API | Global State |
+| Recharts | Data Visualization |
 | Framer Motion | Animations |
-| Lucide React | Icons |
-| CSS | Responsive UI |
+| CSS | Styling |
 | LocalStorage | Data Persistence |
 
 ---
 
-# 📁 Folder Structure
+## Architecture Overview
 
 ```text
-src/
+src
 │
-├── components/
+├── components
 │   └── Reusable UI components
 │
-├── context/
-│   ├── DSAContext
-│   ├── SQLContext
-│   ├── PlacementContext
-│   └── ThemeContext
+├── context
+│   └── Global state providers
 │
-├── data/
-│   └── Question Library
+├── data
+│   └── Question dataset
 │
-├── hooks/
-│   └── Custom hooks
+├── hooks
+│   └── Custom React hooks
 │
-├── layouts/
-│   └── Sidebar / Layout
+├── layouts
+│   └── Application layouts
 │
-├── pages/
-│   ├── Dashboard
-│   ├── DSA Tracker
-│   ├── SQL Tracker
-│   ├── Analytics
-│   └── Settings
+├── pages
+│   └── Route pages
 │
-└── utils/
-    └── Helper functions
+├── routes
+│   └── Routing configuration
+│
+└── utils
+    └── Helper utilities
 ```
 
 ---
 
-# ⚡ Installation
+## State Management Flow
 
-Clone repository:
+```text
+User Action
+     ↓
+React Component
+     ↓
+Context API
+     ↓
+LocalStorage
+     ↓
+Dashboard / Analytics Update
+```
+
+---
+
+## Getting Started
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/Shiva181006/prepflow-x.git
 ```
 
-Go inside project:
+Move into project:
 
 ```bash
 cd prepflow-x
@@ -227,81 +158,54 @@ Install dependencies:
 npm install
 ```
 
-Start development server:
+Run locally:
 
 ```bash
 npm run dev
 ```
 
-Build project:
-
-```bash
-npm run build
-```
-
 ---
 
-# 🌍 Deployment
+## Screenshots
 
-The project can be deployed on:
-
-- Vercel
-- Netlify
-- GitHub Pages
-
-Recommended:
+(Add project screenshots here)
 
 ```text
-Vercel + GitHub Integration
+docs/screenshots/
 ```
 
 ---
 
-# 🧠 What I Learned
+## Learning Outcomes
 
-Through this project:
+Through this project I worked with:
 
-- React component architecture
+- Component based architecture
+- React Hooks
 - Context API state management
-- Routing
+- Client-side routing
 - Data persistence
+- Dashboard creation
+- Reusable UI patterns
 - Performance optimization
-- Reusable components
-- Dashboard design
-- Real-world project structure
 
 ---
 
-# 🔮 Future Improvements
+## Future Scope
 
 - Backend integration
-- User authentication
-- Cloud database
-- AI-based preparation suggestions
-- Mock interview system
-- Calendar reminders
-- PWA support
+- Authentication system
+- Cloud database support
+- User profiles
+- Advanced preparation analytics
 
 ---
 
-# 💼 Resume Description
-
-**PrepFlow X — Interview Preparation Platform**
-
-Built a modern React-based placement preparation platform featuring DSA tracking, SQL practice management, placement workflow tracking, analytics dashboard, curated question library, bookmarks, dark/light theme, and persistent data storage using Context API and LocalStorage.
-
----
-
-# 👨‍💻 Author
+## Author
 
 **Shiva Kasaudhan**
 
 GitHub:  
 https://github.com/Shiva181006
 
-LinkedIn:  
-Add your LinkedIn URL
-
 ---
-
-⭐ If you like this project, consider giving it a star!
